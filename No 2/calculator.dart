@@ -19,7 +19,7 @@ class Calculator {
   // kali
   kaliFun(var a, var b) => a * b;
   // bagi
-  baguFun(var a, var b) => a / b;
+  bagiFun(var a, var b) => a / b;
   // pangkat
   pangkatFun(var a, var b) => pow(a, b);
 }
@@ -32,7 +32,7 @@ void main(List<String> args) {
   // perkalian
   print(calculator.kaliFun(calculator.num1, calculator.num2));
   // pembagian
-  print(calculator.baguFun(calculator.num1, calculator.num2));
+  print(calculator.bagiFun(calculator.num1, calculator.num2));
   // pertambahan
   print(calculator.tambahFun(calculator.num1, calculator.num2));
   // perpangkatan
