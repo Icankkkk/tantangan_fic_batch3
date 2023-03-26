@@ -12,6 +12,9 @@ class Calculator {
     this.num2 = value;
   }
 
+  get getNum1 => num1;
+  get getNum2 => num2;
+
   // tambah
   tambahFun(var a, var b) => a + b;
   // kurang
@@ -25,16 +28,21 @@ class Calculator {
 }
 
 void main(List<String> args) {
+  // create object
   Calculator calculator = Calculator();
+
+  // set num1, num2 value
   calculator.setNum1Value = 4;
   calculator.setNum2Value = 2;
 
-  // perkalian
-  print(calculator.kaliFun(calculator.num1, calculator.num2));
-  // pembagian
-  print(calculator.bagiFun(calculator.num1, calculator.num2));
-  // pertambahan
-  print(calculator.tambahFun(calculator.num1, calculator.num2));
-  // perpangkatan
-  print(calculator.pangkatFun(calculator.num1, calculator.num2));
+  // get num1, num2 value
+  double a = calculator.getNum1;
+  double b = calculator.getNum2;
+
+  // output
+  print('${a} + ${b} = ${calculator.tambahFun(a, b)}');
+  print('${a} - ${b} = ${calculator.kurangFun(a, b)}');
+  print('${a} / ${b} = ${calculator.bagiFun(a, b)}');
+  print('${a} x ${b} = ${calculator.kaliFun(a, b)}');
+  print('${a} pangkat ${b} = ${calculator.pangkatFun(a, b)}');
 }
