@@ -55,7 +55,7 @@ class Nilai {
 
 void main() {
   Nilai mahasiswa1 = Nilai();
-  mahasiswa1.setQuis = 70;
+  mahasiswa1.setQuis = 80;
   mahasiswa1.setUas = 80;
   mahasiswa1.setUts = 85;
 
